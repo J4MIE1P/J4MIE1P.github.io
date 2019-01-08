@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+body {
+  overflow-x: hidden;
+  /* This prevents content from going overs- important */
+  font-family: 'Josefin Sans', sans-serif;
+  color: #626d77;
+}
+
+.offset:before {
+  /* prevents cutting off the top with navbar navigation */
+  display: block;
+  content: "";
+  height: 4.5rem;
+  margin-top: -4.5rem;
+}
+
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+  /* needs the important to override the bg-dark class */
+}
+.navbar-brand h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  margin: -0.2 auto;
+  text-transform: capitalize;
+}
+.navbar-brand h2:hover {
+  color: #65c3ba;
+}
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #65c3ba;
+}
+
+/* Home Section */
+.home-inner {
+  background-image: url(../img/doglake.png);
+}
+
+.caption {
+  width: 70%;
+  max-width: 70%;
+  /* this prevents characters from going outside the window */
+  position: absolute;
+  top: 38%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.caption h5 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+}
+
+/* About Section */
+.newrow {
+  margin-top: 2rem;
+}
+.about img {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.about p {
+  width: 75%;
+  font-size: 1.1rem;
+}
+.top-item {
+  margin-top: -1rem;
+}
+
+/* Projects Section */
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #65c3ba;
+  margin: 0 auto 2rem;
+}
+.project svg.svg-inline--fa {
+  color: #65c3ba;
+}
+.project h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.project p {
+  font-size: 1.1rem;
+}
+.hyperlink {
+  color: #65c3ba;
+}
+.hyperlink:hover {
+  color: #009688;
+  text-decoration: none;
+}
+
+/* Resume Section */
+.fixed {
+  background-image: url(../img/lake.jpg);
+  z-index: -1;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 4rem 2rem;
+}
+.fixed-background h3 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.resume-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #65c3ba;
+  margin: 0 auto 0rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem .4rem 1.2rem;
+  margin: 2rem auto;
+  color: white;
+  background-color: #65c3ba;
+  border-color: #65c3ba;
+}
+.btn-secondary:hover {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* Contact Section */
+footer {
+  background-color: #424a52;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 0rem;
+}
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: .5rem .5rem 0 0;
+}
+footer .icons svg.svg-inline--fa {
+  margin-top: 3rem;
+}
+footer svg.svg-inline--fa:hover {
+  color: #65c3ba!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #62676d;
+  margin-top: 0rem;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  /* the 767 is important to not conflict with bootstrap */
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .caption h5 {
+    font-size: 1.2rem;
+  }
+  .about img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .about p {
+    margin: 0 auto;
+  }
+}
+
+/*
+Bootstrap size references
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query, the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) {...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) {...}
+
+Extra (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {...}
+*/
