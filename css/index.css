@@ -28,7 +28,7 @@ body {
 .navbar-brand h2 {
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  margin: -0.2 auto;
+  margin: -0.1 auto;
   text-transform: capitalize;
 }
 .navbar-brand h2:hover {
