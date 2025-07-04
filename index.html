@@ -1,213 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/fixed.css">
-  <meta name="author" content="Jamie Ip">
-  <meta name="description" content="A personal portfolio website created to learn and experiment with HTML and CSS while simultaneously giving me an outlet to display some work that I'm proud of.">
-  <meta name="keywords" content="Resume,Portfolio,Personal Website,Jamie,Ip,Jamie Ip,Student,HTML,CSS,Bootstrap">
-  <title>I'm Jamie Ip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dragon.css">
+    <meta name="description" content="A personal portfolio website for software engineer Jamie Ip.">
+    <meta name="keywords" content="Resume,Portfolio,Personal Website,Jamie,Ip,Jamie Ip,Software,Engineer,HTML,CSS">
+    <meta name="author" content="Jamie Ip">
+    <title>Jamie.Ip</title>
 </head>
-
-<body data-spy="scroll" data-target="#navbarScroll">
-  <!--- Start Home Section -->
-  <div id="home">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="https://jamieip.com/index"><h2>Jamie Ip</h2></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll">
-        <span class="navbar-toggler-icon"></span>
-        <!-- this creates the hamburger -->
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav ml-auto">
-          <!-- ml-auto makes it go to the right -->
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#resume">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- End Navigation -->
-
-    <!-- Start Home Image Section -->
-    <div class="landing">
-      <div class="home-wrap">
-        <div class="home-inner">
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <h2>Jamie Ip</h2>
+            <nav>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
         </div>
-      </div>
-    </div>
-    <div class="caption text-center">
-      <h5>Hello, I'm</h5>
-      <h1>Jamie Ip</h1>
-      <h3>A Cal student with big dreams, a drive to learn, and a really cute dog.</h3>
-    </div>
-    <!-- End Home Image Section -->
-  </div>
-  <!--- End Home Section -->
+    </header>
 
-  <!--- Start About Section -->
-  <div id="about" class="offset">
-    <div class="newrow">
-      <div class="col-12 text-center">
-        <h3 class="heading">More about Me</h3>
-        <div class="heading-underline">
+    <!-- Home Section -->
+    <section id="home" class="main">
+        <div class="container">
+            <h1>Hi, I'm Jamie</h1>
+            <p class="subtitle">A full stack software engineer with a passion for building intuitive and engaging digital experiences.</p>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="about row">
-      <div class="col-md-2">
-      </div>
-      <div class="col-md-3">
-        <img src="img/profileWithDog.png">
-      </div>
-      <div class="col-md-6">
-        <ul>
-          <li>
-            <p class="top-item">I was born and raised in the Bay Area</p>
-          </li>
-          <li>
-            <p>I've played piano since I was four, cello since I was eight, and have performed around the world in orchestras</p>
-          </li>
-          <li>
-            <p>I've taught myself how to draw, code, juggle, whistle, and solve a Rubik's Cube in under a minute</p>
-          </li>
-          <li>
-            <p>You can find me around Berkeley drinking boba, coding in the East Asian Library, and following KiwiBots around</p>
-          </li>
-          <li>
-            <p>I have an adorable 2 year old Bernedoodle named Orpheus</p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-1">
-      </div>
-    </div>
-    <!--- End About Section -->
-
-    <!--- Start Projects Section -->
-    <div id="projects" class="offset">
-      <!-- Start Jumbotron -->
-      <div class="jumbotron">
-        <div class="text-center">
-          <div class="col-12">
-            <h3 class="heading">Things I've Done</h3>
-            <div class="heading-underline">
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-4">
-              <div class="project">
-                <i class="fas fa-apple-alt fa-4x" data-fa-transform="shrink-2 up-5"></i>
-                <h3>Teaching</h3>
-                <p><a class="hyperlink" href="https://drive.google.com/drive/folders/1woW8kT9FCzDakQMPZ0XCd6D7tGv8Yzd6?usp=sharing" target="_blank">Click for CS 61A Resources!</a><br>I've had an amazing time teaching students in Berkeley's CS 61A class as a mentor for  <a class="hyperlink" href="https://csmentors.berkeley.edu/#/" target="_blank">CSM</a>, a private tutor, and an Academic Intern. Above are problems I designed and compiled to help students succeed in this class.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="project">
-                <i class="fas fa-gamepad fa-4x" data-fa-transform="shrink-2 up-3"></i>
-                <h3>Game Design</h3>
-                <p>I've made games with friends as a programmer and artist. Both of the following were made in Unity and coded in C#: <a class="hyperlink" href="https://alstonchan64.itch.io/phlow" target="_blank">Phlow</a>, which took first place in the Berkeley Bear Jams of Fall 2019, and <a class="hyperlink" href="https://alstonchan64.itch.io/goose-jump" target="_blank">geese</a>, my personal favorite.</p>
-              </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="description">
+                <p>I'm a full stack software developer with expertise in monetization models and user-friendly interfaces.</p>
+                <p>After graduating from UC Berkeley in 2022, I've been having fun honing my expertise in web development and working with cutting edge AI models at Quora.</p>
+                <p>When I'm not at my computer, you can find me reviewing restuarants, watching shows on Broadway, or getting lost in a book.</p>
+                <div class="profile-image-container">
+                    <img src="img/profile.png" alt="Profile picture" class="profile-image">
+                </div>
             </div>
         </div>
+    </section>
 
-          <div class="row text-center">
-            <div class="col-md-4">
-              <div class="project">
-                <i class="far fa-keyboard fa-4x" data-fa-transform="shrink-3 up-5"></i>
-                <h3>Coding Projects</h3>
-                <p>Some things I coded for fun outside of school: an <a class="hyperlink" href="https://github.com/J4MIE1P/Passive-Aggressive-Anagrams" target="_blank">Anagrams Simulator</a> for practicing the popular family word game and a <a class="hyperlink" href="https://github.com/J4MIE1P/SpookyTextAdventure" target="_blank">Spooky Text Adventure</a> game.</p>
-              </div>
+    <!-- Experiences Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="grid">
+                <div class="grid-card">
+                    <h3 class="red-text">Quora</h3>
+                    <p>Member of the Monetization Team.</p>
+                    <p>Optimized ads and improved the ads manager experience on Quora.</p>
+                    <p>Designed the subscriptions system and LLM token economy on our newly launched AI chatbot aggregator, Poe.</p>
+                    <p>Favorite thing about the company: the people! It's also still small and full of startup energy, so things move fast.</p>
+                </div>
+                <div class="grid-card">
+                    <h3 class="blue-text">Amazon</h3>
+                    <p>Intern on the Account Integrity Team.</p>
+                    <p>Used cloud computing services on AWS to develop a data visualization tool for connecting other teams into our team's API.</p>
+                    <p>Best memories: taking a trip to Seattle to hang out with the team, visit the Spheres, and watch a baseball game.</p>
+                </div>
+                <div class="grid-card">
+                    <h3 class="yellow-text">UC Berkeley</h3>
+                    <p>Graduated in 2022 with a GPA of 4.0.</p> 
+                    <p>Completed a BA in Computer Science and a Minor in Data Science.</p>
+                    <p>What I'm proud of: I was part of Computer Science Mentors for three years, helping many students with their first CS experience at Cal.</p>
+                    <p>Fun fact: I played Bad Apple on the Campanile.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-              <div class="project">
-                <i class="fas fa-tv fa-4x" data-fa-transform="shrink-4.5 up-4.5"></i>
-                <h3>Web Dev</h3>
-                <p>I designed this website from scratch to teach myself HTML and CSS. In high school, I used Wordpress and Wix to create websites for my <a class="hyperlink" href="http://jiwebsites.wixsite.com/youthphonic" target="_blank">string quartet</a> and my <a class="hyperlink" href="https://hhsscienceclub.000webhostapp.com/" target="_blank">high school science club</a>.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="project">
-                <i class="fas fa-paint-brush fa-4x" data-fa-transform="shrink-4 up-4"></i>
-                <h3>Digital Art</h3>
-                <p>I taught myself how to draw and enjoy creating <a class="hyperlink" href="https://drive.google.com/open?id=1gxc4e2-HK6vy3aVCmrUEfXQ-BQQ0TpXZ" target="_blank">digital art</a> on my tablet or photoshopping people onto bears in my free time.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div> <!-- End Jumbotron -->
-    </div>
-    <!--- End Projects Section -->
+    </section>
 
-    <!--- Start Resume Section -->
-    <div id="resume" class="offset">
-      <div class="fixed-background">
-        <div class="row dark text-center">
-
-          <div class="col-12">
-            <h3 class="heading">What I've Accomplished</h3>
-            <div class="resume-underline"></div>
-          </div>
-          <a class="btn btn-md btn-secondary" href="resume.pdf" target="_blank">Download my Resume</a>
-          <!-- using _blank tells html to open link in new tab -->
-        </div> <!-- End Row Dark -->
-        <div class="fixed-wrap">
-          <div class="fixed">
-          </div>
-        </div>
-      </div> <!--End Fixed Background -->
-    </div>
-    <!--- End Resume Section -->
-
-    <!--- Start Contact Section -->
-    <div id="contact" class="offset">
-      <footer>
-        <div class="row justify-content-center">
-
-          <div class="col-md-5 text-center">
-            <p class="contact">Like my website? Have a project and think I can help?<br>Just want to get in touch?</p>
-            <strong class="contact">Send me a message!<br></strong>
-            <a href="mailto:jamieip@hotmail.com"><i class="far fa-envelope"></i></a>
-            <p>jamieip@hotmail.com</p>
-            <div class="icons">
-              <a href="https://www.facebook.com/jamie.ip.9" target="_blank"><i class="fab fa-facebook"></i></a>
-              <a href="https://github.com/J4MIE1P" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/jamie-i-00b21b104/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid">
+                <div class="grid-card">
+                    <h3 class="yellow-text">Game Development</h3>
+                    <p>I had a lot of fun in game jams at UC Berkeley, coding games in Unity with my friends.</p>
+                    <p>Here are some of the finished products: 
+                         <a class="hyperlink" href="https://alstonchan.itch.io/phlow" target="_blank">Phlow</a>, 
+                         <a class="hyperlink" href="https://alstonchan.itch.io/bomberwhale" target="_blank">Bomberwhale</a>, 
+                         <a class="hyperlink" href="https://alstonchan.itch.io/goose-jump" target="_blank">Geese</a>.
+                    </p>
+                </div>
+                <div class="grid-card">
+                    <h3 class="green-text">Web Design</h3>
+                    <p>I wanted to add an interactive touch to my personal website and came up with this snake game. See how long you can get!</p>
+                    <p>I've also used Wordpress, Wix, and Squarespace to create websites for friends and family.</p>
+                </div>
+                <div class="grid-card">
+                    <h3 class="blue-text">More coming soon!</h3>
+                </div>
             </div>
-          </div>
-
-          <hr class="socket">
-          &copy; Jamie Ip 2019
         </div>
-      </footer>
-    </div>
-    <!--- End Contact Section -->
+    </section>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-section">
+                <p>Let's create something amazing together!</p>
+                <div class="contact-section-row">
+                    <a href="mailto:jamieip@hotmail.com" class="contact-link">📧 jamieip@hotmail.com</a>
+                    <a href="https://github.com/J4MIE1P" class="contact-link">🐈‍⬛ GitHub</a>
+                    <a href="https://www.linkedin.com/in/jamie-ip/" class="contact-link">💼 LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
 </html>
